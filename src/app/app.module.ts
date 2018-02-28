@@ -1,3 +1,6 @@
+import { AttandancePage } from './../pages/attandance/attandance';
+import { WaktuPage } from './../pages/waktu/waktu';
+import { IbadahPage } from './../pages/ibadah/ibadah';
 import { LoginPage } from './../pages/login/login';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,7 +26,10 @@ import { SemakibadahPage } from '../pages/semakibadah/semakibadah';
     TabsPage,
     LoginPage,
     ChartPage,
-    SemakibadahPage
+    SemakibadahPage,
+    IbadahPage,
+    WaktuPage,
+    AttandancePage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,12 @@ import { SemakibadahPage } from '../pages/semakibadah/semakibadah';
     TabsPage,
     LoginPage,
     ChartPage,
-    SemakibadahPage
+    SemakibadahPage,
+    IbadahPage,
+    WaktuPage,
+    AttandancePage
+
+   
   ],
   providers: [
     StatusBar,

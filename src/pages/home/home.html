@@ -1,17 +1,53 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <h2>Welcome User!</h2>
   <p>
     This starter project comes with simple tabs-based layout for apps
     that are going to primarily use a Tabbed UI.
   </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  
+</ion-content> -->
+<ion-header>
+  <ion-navbar color="danger">
+     <ion-buttons left>
+           <button ion-button menuToggle>
+             <ion-icon name="menu"></ion-icon>
+           </button>
+         </ion-buttons>
+         <ion-buttons right>
+           <button ion-button >
+               <ion-icon name="more"></ion-icon></button>
+           
+           <!-- <ion-input *ngIf="buttonClicked" type="text" value=""></ion-input>
+             <ion-icon name="more"></ion-icon> -->
+          
+         </ion-buttons>
+         <!--- (click)="onButtonClick()"  (click)="presentPrompt()" -->
+     <ion-title>Profile</ion-title>
+   </ion-navbar>
+ </ion-header>
+ <ion-content padding>
+
+<ion-card   text-center style >
+    <ion-card-content>
+        <img align="center" class="logo" src = "assets/imgs/4.jpg" style="width: 95%;padding-left:20px;"/>
+        <br>
+        <br>
+          <ion-item >
+            <h6><b>Name: Ali Bin Abu</b></h6>
+            <h6><b>Phone Number: 013-6527165</b></h6>
+            <h6><b>Address: Shah Alam seksyen 7</b></h6>
+            <h6></h6>
+            <h6><b>City: Shah alam</b></h6>
+            <h6><b>Postal Code: 77272</b></h6>
+            <h6><b>State: Selangor</b></h6>  
+          </ion-item>
+      </ion-card-content>  
+  </ion-card>
 </ion-content>
+

@@ -1,5 +1,10 @@
+import { HomePage } from './../home/home';
+import { WaktuPage } from './../waktu/waktu';
+import { AboutPage } from './../about/about';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { AttandancePage } from '../attandance/attandance';
+import { ContactPage } from '../contact/contact';
 
 /**
  * Generated class for the SemakibadahPage page.
@@ -25,6 +30,21 @@ export class SemakibadahPage {
     };
     this.view.dismiss(data);
   }
+chart(){
+  this.navCtrl.setRoot(AboutPage)
+}
+waktu(){
+  this.navCtrl.push(WaktuPage)
+}
+attandance(){
+  this.navCtrl.push(AttandancePage)
+}
+about(){
+  this.navCtrl.push(ContactPage)
+}
+profile(){
+  this.navCtrl.push(HomePage)
+}
 
   ionViewWillLoad() {
     const data = this.navParams.get('data');

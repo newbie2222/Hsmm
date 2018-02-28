@@ -1,21 +1,109 @@
-<!--
-  Generated template for the SemakibadahPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
+    <ion-navbar color="danger">
+      <ion-title>
+          Contact
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
 
-  <ion-navbar>
-    <ion-title>semakibadah</ion-title>
-    <ion-buttons end>
-      <button ion-button (click)="closeModal()">Close</button>
+  <!-- <div padding text-center>
+     <img src="{{pathForImage(lastImage)}}" class="profPic" [hidden]="lastImage === null"> -->
+    <!-- <img src="./assets/pic.jpg" class="profPic"> -->
+    <!-- <img class="beforeFixing" class="profPic" ><br>  
+    <img class="beforeFixing" class="profPic"><br> 
+    <ion-buttons start>
+      <button ion-button round color="primary" >
+              <span style="color:white" >Change Profile Picture</span>
+            </button>
     </ion-buttons>
-  </ion-navbar>
+  </div>
+  <form padding margin-top>
+    <ion-item> -->
+      <!-- <ion-icon color="primary" ios="ios-person" md="md-person" item-left></ion-icon> -->
+      <!-- <ion-label floating>Full Name</ion-label>
+      <ion-input  type="string"></ion-input>
+    </ion-item>
+    <ion-item> -->
+      <!-- <ion-icon color="primary" name="mail" item-left></ion-icon> -->
+      <!-- <ion-label floating>Birth-Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input  type="string"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Phone Number</ion-label>
+      <ion-input type="string"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Gender</ion-label>
+      <ion-select  interface="popover">
+        <ion-option >Male</ion-option>
+        <ion-option >Female</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Skin Type</ion-label>
+      <ion-select  interface="popover" type="number">
+        <ion-option> </ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Hair Length</ion-label>
+      <ion-select interface="popover" type="number">
+        <ion-option ></ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Weight</ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+    <ion-item>
+      <button text-center ion-button round color="info" type="submit" class="update" full>Update Profile</button>
+    </ion-item>
+  </form>
 
-</ion-header>
+  <ion-item>
+    <ion-icon  ios="ios-exit" md="md-exit" color="primary" item-left></ion-icon><a>Sign Out</a>
+  </ion-item> -->
+  <!-- <ion-view > -->
+      <ion-content>
+    
+        <div class="dashboard-main-container animated bounceInDown">
+          <h3>Welcome User</h3>
+          <div class="avatar-conatainer">
+            <i class="badge-notify"></i>
+            <img src="assets/imgs/4.jpg" >
+          </div>
+          </div>
+          <ion-card>
+            <ion-row>
+              <ion-col>
+                  <ion-icon ios="ios-clipboard" md="md-clipboard" color="twitter"(click)="attandance()"><h4>Attandance</h4></ion-icon>
+              </ion-col>
+              <ion-col>
+                  <ion-icon ios="ios-stats" md="md-stats" color="secondary" (click)="waktu()"><h4>Waktu Solat</h4></ion-icon>
+              </ion-col>
+              <ion-col>
+                  <ion-icon ios="logo-facebook" md="logo-facebook" color="twitter" (click)="chart()"><h4>Chart</h4></ion-icon>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                  <ion-icon ios="ios-clipboard" md="md-clipboard" color="twitter"><h4>User</h4></ion-icon>
+              </ion-col>
+              <ion-col>n
+                  <ion-icon ios="ios-stats" md="md-stats" color="secondary" (click)="profile()"><h4> Profile</h4></ion-icon>
+              </ion-col>
+              <ion-col>
+                  <ion-icon ios="logo-facebook" md="logo-facebook" color="twitter"(click)="about()"><h4>About</h4></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+      </ion-content>
+   
+    
 
-
-<ion-content padding>
-
-</ion-content>
+<!-- (ionChange)="setSkinType($event)" -->

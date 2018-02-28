@@ -1,11 +1,66 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
+<!-- <ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-slides class="slides" pager >
+    <ion-slide>
+      <img src="assets/imgs/1.png\">
+    </ion-slide>
+    <ion-slide>
+      <img src=\"assets/imgs/2.jpg\">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/3.png\">
+    </ion-slide>
+  </ion-slides>
+</ion-content> -->
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      Charts 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <ion-slides class="slides" pager >
+    <ion-slide>
+      <!-- <ion-card> -->
+        <ion-card-header>
+          Spritual Well-Being (SWB)
+        </ion-card-header>
+        <!-- <ion-card-content> -->
+          <canvas #barCanvas></canvas>
+        <!-- </ion-card-content> -->
+      <!-- </ion-card> -->
+   
+    </ion-slide>
+    <ion-slide>
+      <!-- <ion-card> -->
+        <ion-card-header>
+          Coping Resource Inventory (CRI)
+        </ion-card-header>
+        <!-- <ion-card-content> -->
+          <canvas #doughnutCanvas></canvas>
+        <!-- </ion-card-content>
+      </ion-card> -->
+    </ion-slide>
+    <ion-slide>
+      <!-- <ion-card> -->
+        <ion-card-header>
+          SEMAK IBADAH
+        </ion-card-header>
+        <!-- <ion-card-content> -->
+          <canvas #lineCanvas></canvas>
+        <!-- </ion-card-content>
+      </ion-card> -->
+    </ion-slide>
+  </ion-slides>
+ 
 </ion-content>
